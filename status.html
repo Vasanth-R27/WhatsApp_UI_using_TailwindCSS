@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status | WhatsApp-UI-TailwindCSS</title>
+
+    <!-- css-link -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!-- Whatsapp-icon-link -->
+    <link rel="shortcut icon" href="./assets/images/WhatsApp-icon.png" type="image">
+
+</head>
+
+<body class="bg-green-400 px-10 py-5">
+
+    <section class="max-w-md mx-auto">
+
+        <div class="bg-green-800 px-5 py-5 flex items-center justify-between">
+            <h1 class="text-white font-bold text-xl">WhatsApp</h1>
+            <div>
+                <div class="flex space-x-4">
+
+                    <!-- search-bar-icon -->
+                    <a href="" title="Search"><svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                            width="26" height="26" viewBox="0 0 24 24">
+                            <path
+                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3l-1.4 1.4ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Camera-icon -->
+                    <a href="" target="blank" title="Camera">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                            <path class="fill-current text-white"
+                                d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Zm16-2V7h-4.05l-1.825-2h-4.25L8.05 7H4v12Zm-8-6Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Hamburger-icon -->
+                    <a href="" title="Settings">
+                        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="26" height="25"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="3"
+                                d="M12 12h.01v.01H12zm0-7h.01v.01H12zm0 14h.01v.01H12z" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <ul class="bg-green-800 flex justify-between items-center space-x-2">
+            <!-- community-icon -->
+            <li class="ml-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    class="fill-current text-white">
+                    <path
+                        d="M12 12.75c1.63 0 3.07.39 4.24.9c1.08.48 1.76 1.56 1.76 2.73V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-.61c0-1.18.68-2.26 1.76-2.73c1.17-.52 2.61-.91 4.24-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1c-.99 0-1.93.21-2.78.58A2.01 2.01 0 0 0 0 16.43V17c0 .55.45 1 1 1h3.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1c.4.68.63 1.46.63 2.29V18H23c.55 0 1-.45 1-1v-.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" />
+                </svg>
+            </li>
+
+            <li class="flex space-x-2 flex-1 justify-around">
+                <!-- chats-portion -->
+                <div class="uppercase font-medium text-md text-white  flex items-center space-x-2 
+                ">
+                    <span>chats</span>
+
+                    <span
+                        class="bg-white p-0.5 w-4 h-4 text-green-800 font-semibold text-xs rounded-full flex items-center justify-center">
+                        7</span>
+                </div>
+
+                <!-- status -->
+                <div class="uppercase font-medium text-md text-white  flex items-center border-b-4 p-3">
+                    <span>status</span>
+                </div>
+
+                <!-- calls -->
+                <div class="uppercase font-medium text-md text-white  flex items-center">
+                    <span>calls</span>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Chat-screen -->
+        <div class="bg-white h-auto">
+
+            <!-- My-status -->
+            <div class="px-3 py-2 flex items-center justify-between space-x-4 hover:cursor-pointer hover:bg-gray-200">
+                <img src="./assets/images/Vasanth-image.png" alt="me"
+                    class="w-16 h-16 rounded-full border-2 border-emerald-500 p-0.5">
+
+                <div class="flex-1 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-semibold">My Status</h3>
+                        <p class="text-sm text-gray-600">Today, 7:27 am</p>
+                    </div>
+
+                    <div>
+                        <svg class="fill-current text-green-800" xmlns="http://www.w3.org/2000/svg" width="26"
+                            height="25" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="3"
+                                d="M12 12h.01v.01H12zm0-7h.01v.01H12zm0 14h.01v.01H12z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent-updates -->
+            <div class="px-3 py-1">
+                <h3 class="text-gray-700 font-medium">Recent Updates</h3>
+            </div>
+
+            <!-- story-1 -->
+            <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                <img src="./assets/images/vicky-img.jpg" alt="vicky"
+                    class="w-16 h-16 rounded-full border-2 border-emerald-500 p-0.5">
+                <div>
+                    <h3 class="font-semibold">Vicky</h3>
+                    <p class="text-sm text-gray-600">Just Now</p>
+                </div>
+            </div>
+
+            <!-- story-2 -->
+            <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                <img src="./assets/images/Gai3-img.jpg" alt="gai3"
+                    class="w-16 h-16 rounded-full border-2 border-emerald-500 p-0.5">
+                <div>
+                    <h3 class="font-semibold">가야트리비여</h3>
+                    <p class="text-sm text-gray-600">21min ago</p>
+                </div>
+            </div>
+
+            <!-- Viewed-updates -->
+            <div class="px-3 py-1">
+                <h3 class="text-gray-700 font-medium">Viewed Updates</h3>
+            </div>
+
+            <!-- story-1 -->
+            <div>
+                <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                    <img src="./assets/images/karthik-img.jpg" alt="karthi"
+                        class="w-16 h-16 rounded-full border-2 border-gray-400 p-0.5">
+                    <div>
+                        <h3 class="font-semibold"></h3>Karthik
+                        <p class="text-sm text-gray-600">11:13 am</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- story-2 -->
+            <div>
+                <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                    <img src="./assets/images/no-dp.jpg" alt="amma"
+                        class="w-16 h-16 rounded-full border-2 border-gray-400 p-0.5">
+                    <div>
+                        <h3 class="font-semibold">Amma💗</h3>
+                        <p class="text-sm text-gray-600">01:45 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- story-3 -->
+            <div>
+                <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                    <img src="./assets/images/raki-img.jpg" alt="raki"
+                        class="w-16 h-16 rounded-full border-2 border-gray-400 p-0.5">
+                    <div>
+                        <h3 class="font-semibold">Rakesh</h3>
+                        <p class="text-sm text-gray-600">06:34 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- story-4 -->
+            <div>
+                <div class="px-3 py-2 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+                    <img src="./assets/images/surya-img.jpg" alt="surya"
+                        class="w-16 h-16 rounded-full border-2 border-gray-400 p-0.5">
+                    <div>
+                        <h3 class="font-semibold">Surya</h3>
+                        <p class="text-sm text-gray-600">11:20 pm</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

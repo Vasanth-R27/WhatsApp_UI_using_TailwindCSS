@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats | WhatsApp-UI-TailwindCSS</title>
+
+    <!-- css-link -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!-- Whatsapp-icon-link -->
+    <link rel="shortcut icon" href="./assets/images/WhatsApp-icon.png" type="image">
+
+</head>
+
+<body class="bg-green-400 px-10 py-5">
+    <section class="max-w-md mx-auto">
+        <div class="bg-green-800 px-5 py-5 flex justify-between items-center">
+            <h1 class="text-white font-bold text-xl">WhatsApp</h1>
+
+            <div class="flex space-x-3 hover:curser-pointer">
+
+                <!-- search-bar-icon -->
+                <a href="" title="Search">
+                    <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3l-1.4 1.4ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z" />
+                    </svg>
+                </a>
+
+                <!-- Camera-icon -->
+                <a href="" target="blank" title="Camera">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                        <path class="fill-current text-white"
+                            d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Zm16-2V7h-4.05l-1.825-2h-4.25L8.05 7H4v12Zm-8-6Z" />
+                    </svg>
+                </a>
+
+                <!--Hamburger-icon -->
+                <a href="" title="Settings">
+                    <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="26" height="25"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="3"
+                            d="M12 12h.01v.01H12zm0-7h.01v.01H12zm0 14h.01v.01H12z" />
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+
+        <ul class="bg-green-800 flex justify-between items-center space-x-2">
+            <!-- community-icon -->
+            <li class="ml-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                    class="fill-current text-white">
+                    <path
+                        d="M12 12.75c1.63 0 3.07.39 4.24.9c1.08.48 1.76 1.56 1.76 2.73V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-.61c0-1.18.68-2.26 1.76-2.73c1.17-.52 2.61-.91 4.24-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1c-.99 0-1.93.21-2.78.58A2.01 2.01 0 0 0 0 16.43V17c0 .55.45 1 1 1h3.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1c.4.68.63 1.46.63 2.29V18H23c.55 0 1-.45 1-1v-.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" />
+                </svg>
+            </li>
+
+            <li class="flex space-x-2 flex-1 justify-around">
+                <!-- chats-portion -->
+                <div class="uppercase font-medium text-md text-white  flex items-center space-x-2 border-b-4 p-3">
+                    <span>chats</span>
+
+                    <span
+                        class="bg-white p-0.5 w-4 h-4 text-green-800 font-semibold text-xs rounded-full flex items-center justify-center">
+                        7</span>
+                </div>
+
+                <!-- status -->
+                <div class="uppercase font-medium text-md text-white  flex items-center ">
+                    <span>status</span>
+                </div>
+
+                <!-- calls -->
+                <div class="uppercase font-medium text-md text-white  flex items-center">
+                    <span>calls</span>
+                </div>
+            </li>
+        </ul>
+
+        <!-- chats-sections -->
+        <div class="bg-white space-y-2 relative">
+
+            <!-- chat-1 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/Vasanth-image.png" alt="Me"
+                        class="w-16 h-16 rounded-full border-2 border-emerald-500 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Me (You)</h4>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"
+                            class="text-blue-500 ">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                        <p class="text-gray-500 text-sm">cming monday your exams get starts</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center space-y-0.5">
+                    <span class="text-gray-500 font-semibold">Today</span>
+                    <svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path class="text-zinc-400 " d="m16 12l2 2v2h-5v6l-1 1l-1-1v-6H6v-2l2-2V5H7V3h10v2h-1v7Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- chat-2 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=appa&background=0D8ABC&color=fff" alt="appa"
+                        class="w-16 rounded-full">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Appa</h4>
+                    <p class="text-gray-500 text-sm">its already 10pm now. come fast!!</p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">10:02</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">1</span>
+                </div>
+            </div>
+
+            <!-- chat-3 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/ytfc-img.jpg" alt="young challenger" class=" w-16 rounded-full">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Young challengers</h4>
+                    <p class="text-gray-500 text-sm">Guys tomorrow practice will be at sharp 6 am. </p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">09:23</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">8</span>
+                </div>
+            </div>
+
+            <!-- chat-4 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/Gai3-img.jpg" alt="gai3"
+                        class=" w-16 rounded-full border-2 border-emerald-500 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">가야트리비여</h4>
+                    <p class="text-gray-500 text-sm">Evathu mane ge same lucy thara ne ond cat came ya😻.<span><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm0-2h14V5H5v14Zm1-2h12l-3.75-5l-3 4L9 13l-3 4Zm-1 2V5v14Zm3.5-9q.625 0 1.063-.438T10 8.5q0-.625-.438-1.063T8.5 7q-.625 0-1.063.438T7 8.5q0 .625.438 1.063T8.5 10Z" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">08:21</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">3</span>
+                </div>
+            </div>
+
+            <!-- chat-5 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/no-dp.jpg" alt="amma"
+                        class="w-16 h-16 rounded-full border-2 border-gray-400 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Amma💗</h4>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"
+                            class="text-blue-500 ">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                        <p class="text-gray-500 text-sm">Today You forgot your lunch box at home</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chat-6 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/surya-img.jpg" alt="surya"
+                        class="w-16 rounded-full border-2 border-gray-400 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Surya</h4>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"
+                            class="text-gray-500 ">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                        <p class="text-gray-500 text-sm">Variya naliku practice ku ?</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- chat-7 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/duolingo-logo.png" alt="Duolingo-img" class="w-16 rounded-full">
+                </div>
+
+                <div class="flex-1">
+                    <div class="flex items-center gap-1">
+                        <h4 class="font-semibold">Duolingo</h4>
+                        <svg class="fill-current text-green-600" xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M10.95 12.7L9.5 11.275Q9.225 11 8.812 11t-.712.3q-.275.275-.275.7t.275.7l2.15 2.15q.3.3.7.3t.7-.3l4.25-4.25q.3-.3.287-.7t-.287-.7q-.3-.3-.713-.312t-.712.287L10.95 12.7Zm-2.8 9.05L6.7 19.3l-2.75-.6q-.375-.075-.6-.388t-.175-.687L3.45 14.8l-1.875-2.15q-.25-.275-.25-.65t.25-.65L3.45 9.2l-.275-2.825q-.05-.375.175-.688t.6-.387l2.75-.6l1.45-2.45q.2-.325.55-.438t.7.038l2.6 1.1l2.6-1.1q.35-.15.7-.038t.55.438L17.3 4.7l2.75.6q.375.075.6.388t.175.687L20.55 9.2l1.875 2.15q.25.275.25.65t-.25.65L20.55 14.8l.275 2.825q.05.375-.175.688t-.6.387l-2.75.6l-1.45 2.45q-.2.325-.55.438t-.7-.038l-2.6-1.1l-2.6 1.1q-.35.15-.7.038t-.55-.438Z" />
+                        </svg>
+                    </div>
+
+                    <p class="text-gray-500 text-sm">Hi Vasanth!
+                        it's Duo!⏰Here is your request to reminder for your daily korean lesson.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">07:45</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">1</span>
+                </div>
+            </div>
+
+
+            <!-- chat-8 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/kingster-logo.png" alt="Meera" class="w-16 rounded-full">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Meera BWC</h4>
+                    <p class="text-gray-500 text-sm">Me only. office number idhu</p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">03:40</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">2</span>
+                </div>
+            </div>
+
+            <!-- chat-9 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/karthik-img.jpg" alt="Karthi"
+                        class="w-16 rounded-full border-2 border-gray-400 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Karthik</h4>
+                    <p class="text-gray-500 text-sm">iru bro kovil ku poitu vare</p>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-gray-500 font-semibold">01:20</span>
+                </div>
+
+            </div>
+
+            <!-- chat-10 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/vicky-img.jpg" alt="vicky"
+                        class=" w-16 rounded-full border-2 border-emerald-600 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Vicky</h4>
+                    <p class="text-gray-500 text-sm">Pathiya vasanth match nethuu !</p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">Yesterday</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">1</span>
+                </div>
+            </div>
+
+            <!-- chat-11 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="./assets/images/raki-img.jpg" alt="raki"
+                        class="w-16 rounded-full border-2 border-gray-400 p-0.5">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Rakesk</h4>
+                    <div class="flex items-center gap-2">
+                        <svg class="fill-current text-red-700 " xmlns="http://www.w3.org/2000/svg" width="17"
+                            height="17" viewBox="0 0 24 24">
+                            <path
+                                d="m3.4 20.4l-2.3-2.25q-.3-.3-.3-.7t.3-.7q2.2-2.375 5.075-3.562T12 12q2.95 0 5.813 1.188T22.9 16.75q.3.3.3.7t-.3.7l-2.3 2.25q-.275.275-.638.3t-.662-.2l-2.9-2.2q-.2-.15-.3-.35t-.1-.45v-2.85q-.95-.3-1.95-.475T12 14q-1.05 0-2.05.175T8 14.65v2.85q0 .25-.1.45t-.3.35l-2.9 2.2q-.3.225-.663.2t-.637-.3ZM6 15.35q-.725.375-1.4.863T3.2 17.3l1 1L6 16.9v-1.55Zm12 .05v1.5l1.8 1.4l1-.95q-.725-.65-1.4-1.125T18 15.4Zm-12-.05Zm12 .05ZM6 9q-.425 0-.713-.288T5 8V4q0-.425.288-.713T6 3h4q.425 0 .713.288T11 4q0 .425-.288.713T10 5H8.4l3.525 3.525l4.95-4.95q.3-.3.713-.3t.712.3q.3.3.3.713T18.3 5l-4.925 4.925q-.575.575-1.425.575t-1.425-.575L7 6.4V8q0 .425-.288.713T6 9Z" />
+                        </svg>
+                        <p class="text-gray-500 text-sm"> Missed voice call</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-emerald-600 font-semibold">Sun</span>
+                    <span
+                        class="w-4 h-4 p-2.5 text-white bg-emerald-600  rounded-full flex items-center justify-center text-xs font-semibold">1</span>
+                </div>
+            </div>
+
+            <!-- chat-12 -->
+            <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=Trash&background=random&color=purple" alt="trash"
+                        class="rounded-full">
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold">Trash🗑</h4>
+                    <p class="text-gray-600 text-sm"><span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm0-2h14V5H5v14Zm1-2h12l-3.75-5l-3 4L9 13l-3 4Zm-1 2V5v14Zm3.5-9q.625 0 1.063-.438T10 8.5q0-.625-.438-1.063T8.5 7q-.625 0-1.063.438T7 8.5q0 .625.438 1.063T8.5 10Z" />
+                            </svg></span></p>
+                </div>
+            </div>
+
+            <!-- fixed button-icon -->
+            <div
+                class="bg-green-800 w-12 h-12 rounded-full flex items-center justify-center absolute bottom-6 right-3 hover:cursor-pointer hover:bg-green-900 shadow-xl shadow-gray-400">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h8v2H6zm0-3h12v2H6zm0-3h12v2H6z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
