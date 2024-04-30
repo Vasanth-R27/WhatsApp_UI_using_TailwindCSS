@@ -28,4 +28,4 @@ Tailwindcss
 [MIT](#MIT)
 
 ##Social Media
-[LinkedIn](#https://www.linkedin.com/in/vasanth-r27/)
+[LinkedIn](https://www.linkedin.com/in/vasanth-r27/)
